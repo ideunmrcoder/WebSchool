@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Terabayt-IT janaliqlari</title>
+<style>
+
+body {margin: 0;}
+
+.dws-menu [type="checkbox"]{
+  display: none;
+}
+ 
+.dws-menu label.toogleMenu {
+  background-color: #C9C9C9;
+  display: none;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-style: 14px;
+  cursor: pointer;
+  position: relative;
+}
+.dws-menu label.toogleMenu .fa{
+  top: 15px;
+  left: 12px;
+  font-size: 18px;
+}
+
+
+@media all and (max-width: 800px){
+   .dws-menu ul { 
+display: none;
+    }
+    .dws-menu label.toogleMenu {
+      display: block;
+    }
+    div.scrollable {
+      display: none;
+    }
+     div.scrollable1 {
+      display: none;
+    }
+    .lableright {
+      display: none;
+    }
+    input.toogleMenu:checked + label.toogleMenu{
+      background: #000;
+      color: #fff;
+    }
+    input.toogleMenu:checked ~ ul{
+      display: block;
+    }   
+
+ }
+
+p {
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+
+}
+
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+#layout {
+  background-color: #333333;
+  border-collapse: collapse ;
+  width: 100%;
+}
+td { padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0;
+
+
+</style>
+</head>
+
+
+
+<body>
+
+<table id="layout">
+  <tr>
+    
+    <td>
+      <p >Kirilsha lotinsha</p>
+    </td>
+    <td>
+      <p align="right">Follow
+      <img width="20px"  src="insta.jpg">   
+      <img width="20px" src="facebook.jpg">
+      <img width="20px" src="tt.jpg">
+      <img width="20px" src="twit.jpg">
+    </p>
+    </td>
+  </tr>
+
+</table>
+<img width="700px" src="Terabayt.PNG">
+ <nav class="dws-menu">
+<input type="checkbox" name="toogle" id="menu" class="toogleMenu">
+<label for="menu" class="toogleMenu"><i class="fa fa-bars" aria-hidden="true">Menu</i></label>
+<ul>
+  <li><a href="#home">Xabarlar</a></li>
+  <li><a href="#news">Biz haqqimizda</a></li>
+  <li><a href="#contact">Baylanis</a></li>
+  <li><a href="#about">Oyinlar</a>
+</ul>
+</nav>
+
+
+
+</body>
+</html>
